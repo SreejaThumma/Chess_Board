@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     display: flex;
     justify-content: center;
@@ -9,27 +7,26 @@ body {
     background-color: #f0f0f0;
 }
 
-#chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 50px);
-    grid-template-rows: repeat(8, 50px);
-    gap: 0;
-    border: 2px solid #333;
+table {
+    border: 1px groove red;
+    border-collapse: collapse;
+    /* This property collapses the borders of adjacent cells into a single border */
 }
 
-.square {
-    width: 50px;
+td {
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 36px;
+    /* Size of the chess pieces */
+    border: 1px solid black;
 }
 
-.square.black {
-    background-color:rgba(0, 0, 0, 0.6);
+#white {
+    background: white;
 }
 
-.square.white {
-    background-color: white;
+#black {
+    background: rgba(11, 3, 3, 0.577);
 }
